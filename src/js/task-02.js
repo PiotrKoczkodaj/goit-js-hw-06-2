@@ -8,8 +8,9 @@ const ingredients = [
 ];
 
 const list = document.querySelector('#ingredients');
- const item = document.createElement('li');
- console.log(list)
+const item = document.createElement('li');
+
+
 const markup = ingredients.map((ingredient) => `<li class"item">
 ${ingredient}</li>`).join("");
 
