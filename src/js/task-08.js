@@ -8,7 +8,6 @@ const verification = (e) => {
     if (inputEmail.value === '' || inputPassword.value === '') {
         alert('Uzupełnij wszystkie pola'); 
     } else{
-        
         const { elements: { email, password } } = form;
         console.log({
             email: inputEmail.value,
