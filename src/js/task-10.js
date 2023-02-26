@@ -10,14 +10,11 @@ const divBoxes = document.querySelector('#boxes');
 let width = 30;
 let height = 30;
 
-
 const createBoxes = () => {
   let amount = amountInput.value;
-
   if (amount === '') {
     amount = 0;
   }
-
   for (let i = 1; i <= amount; i++){
     width += 10;
     height += 10;
@@ -28,12 +25,9 @@ const createBoxes = () => {
     divBoxes.innerHTML += markup;
   }
 }
-
 const destroyBoxes = () => {
-  
   const destroyer = '';
   divBoxes.innerHTML = destroyer;
-
 }
 btnCreate.addEventListener('click', createBoxes);
 btnDestroy.addEventListener('click',destroyBoxes)
